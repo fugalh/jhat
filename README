@@ -1,0 +1,12 @@
+- Install xautomation[1].
+- Edit the script xplane.sh to match your joystick.
+- make
+- Install to wherever you like (and adjust the paths in xplane.sh appropriately).
+- Enjoy!
+
+Austin has stated that he is not interested in implementing a
+fix, though he has admitted it would not be difficult. If you find this
+useful, please drop a note to austin@xplane.com and linux@xplane.com and let
+them know you would appreciate it if they would consider fixing X-Plane itself. 
+
+1. http://hoopajoo.net/projects/xautomation.html
