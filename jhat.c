@@ -96,13 +96,13 @@ int main(int argc, char **argv)
 	    if (ev.number == xaxis)
 	    {
 		if (ev.value < 0)
-		    keydown(xte_fd, "q", &w);
+		    keydown(xte_fd, "Left", &w);
 		else if (ev.value > 0)
-		    keydown(xte_fd, "e", &e);
+		    keydown(xte_fd, "Right", &e);
 		else
 		{
-		    keyup(xte_fd, "q", &w);
-		    keyup(xte_fd, "e", &e);
+		    keyup(xte_fd, "Left", &w);
+		    keyup(xte_fd, "Right", &e);
 		}
 	    }
 	    else if (ev.number == zaxis)
