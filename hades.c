@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+#include <unistd.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <linux/joystick.h>
 
 void usage(char *argv0)
 {
