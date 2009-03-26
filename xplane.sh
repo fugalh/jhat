@@ -14,7 +14,7 @@ xplane=~/xplane/X-Plane-athlon-xp
 ## end configuration
 
 for d in /sys/class/input/js*; do
-    if grep -q "$name" $d/device/input:input*/name 2>/dev/null; then
+    if grep -q "$name" $d/device/name 2>/dev/null; then
 	dev=/dev/input/`basename $d`
     fi
 done
@@ -22,6 +22,8 @@ done
 if [ -z "$dev" ]; then
     echo "Alas, the joystick to match '$name' was not found."
     exit 1
+else
+    echo "Joystick matching '$name' is $dev"
 fi
 
 $jhat $dev $xaxis $zaxis &
